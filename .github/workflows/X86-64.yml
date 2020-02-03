@@ -67,7 +67,7 @@ jobs:
     
       - name: Upload artifact
         env:
-        EXPORT: DATE=$(date+"%Y%m%d")
+          EXPORT: DATE=$(date+"%Y%m%d")
         uses: actions/upload-artifact@master
         with:
           name: $DATEOpenWrt firmware
